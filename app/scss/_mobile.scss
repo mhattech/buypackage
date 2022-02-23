@@ -1,0 +1,85 @@
+// @media (max-width: 375px) {
+@media (max-width: 375px) {
+    #desktop-top-cut{
+        display: none;
+    }
+
+    #wrapper{
+        display: block;
+    }
+
+    #mobile-top-cut{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    #desktop-bottom-cut{
+        display: none;
+    }
+
+    .card{
+        width: 326px;
+        height: 455px;
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+  
+    .card-secondary{
+        width: 326px;
+        height: 455px;
+        margin: 0 auto 30px;
+        // margin-bottom: 30px;
+    }
+
+    // #our-pricing h1 {
+    //     color: $GrayishBlue;
+    // }
+
+    // #price-rate{
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     color: $LightGrayisBlue;
+    //     margin-bottom: 80px;
+    // }
+
+    // #toggle{
+    //     width: 56px;
+    //     height: 32px;
+    //     background-image: linear-gradient(to right,$Gradientx, $Gradienty);
+    //     margin: 0 25px;
+    //     border-radius: 30px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: flex-start;
+    //     padding: 0 5px;
+    //     position: relative;
+    // }
+
+    // #switch{
+    //     width: 24px;
+    //     height: 24px;
+    //     border-radius: 50%;
+    //     background-color: white;
+    //     position: absolute;
+    // }
+
+    // .switch-right{
+    //     animation-name: switch-right-animation;
+    //     animation-duration: 0.5s;
+    //     animation-timing-function: linear;
+    //     animation-fill-mode: forwards;
+    //     // animation: switch-right-animation 2s 0;
+    // }
+    
+    // .switch-left{
+    //     animation-name: switch-left-animation;
+    //     animation-duration: 0.5s;
+    //     animation-timing-function: linear;
+    //     animation-fill-mode: forwards;
+    // }
+
+    
+}

@@ -1,0 +1,266 @@
+@keyframes switch-right-animation {
+  from {
+    left: 5px;
+  }
+  to {
+    left: 26px;
+  }
+}
+
+@keyframes switch-left-animation {
+  from {
+    left: 26px;
+  }
+  to {
+    left: 5px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6fe;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.card p {
+  text-align: center;
+  color: #6d708d;
+}
+
+.card #price {
+  font-size: 59px;
+}
+
+.card #price #dollar {
+  font-size: 32px;
+}
+
+.card #price {
+  text-align: center;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #494c5f;
+}
+
+.card .line {
+  background: #6d708d;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card .perks {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6d708d;
+}
+
+.card .button {
+  width: 269px;
+  height: 45px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.card .button:hover {
+  background: white;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+}
+
+.card-secondary {
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.card-secondary p {
+  text-align: center;
+}
+
+.card-secondary #price {
+  font-size: 59px;
+}
+
+.card-secondary #price #dollar {
+  font-size: 32px;
+}
+
+.card-secondary #price {
+  text-align: center;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-secondary .line {
+  background: white;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-secondary .perks {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card-secondary .button {
+  width: 269px;
+  height: 45px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  color: #696fdd;
+  justify-content: center;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.card-secondary .button:hover {
+  background: #696fdd;
+  border: 1px solid white;
+  color: white;
+}
+
+#our-pricing {
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+}
+
+#our-pricing h1 {
+  color: #6d708d;
+}
+
+#price-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b3b5c6;
+  margin-bottom: 80px;
+}
+
+#toggle {
+  width: 56px;
+  height: 32px;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+  margin: 0 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5px;
+  position: relative;
+}
+
+#switch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+}
+
+.switch-right {
+  animation-name: switch-right-animation;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.switch-left {
+  animation-name: switch-left-animation;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 375px) {
+  #desktop-top-cut {
+    display: none;
+  }
+  #wrapper {
+    display: block;
+  }
+  #mobile-top-cut {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  #desktop-bottom-cut {
+    display: none;
+  }
+  .card {
+    width: 326px;
+    height: 455px;
+    margin-bottom: 30px;
+    margin: 0 auto;
+  }
+  .card-secondary {
+    width: 326px;
+    height: 455px;
+    margin: 0 auto 30px;
+  }
+}
+
+@media (min-width: 376px) {
+  #mobile-top-cut {
+    display: none;
+  }
+  #desktop-top-cut {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  #wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .card {
+    width: 345px;
+    height: 455px;
+  }
+  .card-secondary {
+    width: 350px;
+    height: 500px;
+  }
+  #desktop-bottom-cut {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

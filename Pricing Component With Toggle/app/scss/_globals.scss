@@ -1,0 +1,207 @@
+// $Gradientx: hsl(236, 72%, 79%);
+// $Gradienty: hsl(237, 63%, 64%);
+// $LinearGradient: hsl(236, 72%, 79%) tor hsl(237, 63%, 64%);
+// $VeryLightGrayishBlue: hsl(240, 78%, 98%);
+// $LightGrayisBlue: hsl(234, 14%, 74%);
+// $GrayishBlue: hsl(233, 13%, 49%);
+// $DarkGrayishBlue: hsl(232, 13%, 33%);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: $VeryLightGrayishBlue;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card{
+    
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+
+    p {
+        text-align: center;
+        color: $GrayishBlue;
+    }
+
+    #price{
+        font-size: 59px;
+    }
+    
+    #price #dollar{
+        font-size: 32px;
+        
+    }
+
+    #price {
+        text-align: center;
+        margin: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $DarkGrayishBlue;
+    }
+
+    .line {
+        background: $GrayishBlue;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .perks {
+        text-align: center;
+        margin-bottom: 20px;
+        color: $GrayishBlue;
+    }
+
+    .button{
+        width: 269px;
+        height: 45px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, $Gradientx, $Gradienty);
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 31px;
+    }  
+
+    .button:hover {
+        // width: 269px;
+        // height: 45px;
+        // border-radius: 10px;
+        background: white;
+        border: 1px solid $Gradienty;
+        color: $Gradienty;
+        // justify-content: center;
+        // align-items: center;
+        // margin-top: 31px;
+    }  
+
+    
+}
+
+.card-secondary{
+    
+    background-image: linear-gradient($Gradientx, $Gradienty);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+
+    p {
+        text-align: center;
+    }
+
+    #price{
+        font-size: 59px;
+    }
+    
+    #price #dollar{
+        font-size: 32px;
+        
+    }
+
+    #price {
+        text-align: center;
+        margin: 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        background: white;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .perks {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .button{
+        width: 269px;
+        height: 45px;
+        border-radius: 10px;
+        background: white;
+        display: flex;
+        color: $Gradienty;
+        justify-content: center;
+        align-items: center;
+        margin-top: 31px;
+    }
+
+    .button:hover{
+        background: $Gradienty;
+        border: 1px solid white;
+        color: white;
+    }
+
+}
+
+#our-pricing{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+
+#our-pricing h1 {
+    color: $GrayishBlue;
+}
+
+#price-rate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $LightGrayisBlue;
+    margin-bottom: 80px;
+}
+
+#toggle{
+    width: 56px;
+    height: 32px;
+    background-image: linear-gradient(to right,$Gradientx, $Gradienty);
+    margin: 0 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5px;
+    position: relative;
+}
+
+#switch{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+}
+
+.switch-right{
+    animation-name: switch-right-animation;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    // animation: switch-right-animation 2s 0;
+}
+
+.switch-left{
+    animation-name: switch-left-animation;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}

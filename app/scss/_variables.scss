@@ -1,0 +1,56 @@
+$Gradientx: hsl(236, 72%, 79%);
+$Gradienty: hsl(237, 63%, 64%);
+$LinearGradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+$VeryLightGrayishBlue: hsl(240, 78%, 98%);
+$LightGrayisBlue: hsl(234, 14%, 74%);
+$GrayishBlue: hsl(233, 13%, 49%);
+$DarkGrayishBlue: hsl(232, 13%, 33%);
+
+@keyframes switch-right-animation {
+    from {
+        left: 5px;
+    }
+    // 1%{
+    //     margin-right: auto;
+    //     margin-left: 1%;
+    // }
+    // 50%{
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+    // 60%{
+    //     margin-right: auto;
+    //     margin-left: 60%;
+    // }
+    // 99%{
+    //     margin-right: auto;
+    //     margin-left: 99%;
+    // }
+    to {
+        left: 26px;
+    } 
+}
+@keyframes switch-left-animation {
+    from {
+        left: 26px;
+    }
+    // 1%{
+    //     margin-right: auto;
+    //     margin-left: 1%;
+    // }
+    // 50%{
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+    // 60%{
+    //     margin-right: auto;
+    //     margin-left: 60%;
+    // }
+    // 99%{
+    //     margin-right: auto;
+    //     margin-left: 99%;
+    // }
+    to {
+        left: 5px;
+    } 
+}

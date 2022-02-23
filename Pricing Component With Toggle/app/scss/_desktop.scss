@@ -1,0 +1,40 @@
+@media (min-width: 376px ) {
+    #mobile-top-cut{
+        display: none;
+    }
+    #desktop-top-cut{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    #wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .card{
+        width: 345px;
+        height: 455px;
+    }
+
+    .card-secondary{
+        width: 350px;
+        height: 500px;
+    }
+
+    #desktop-bottom-cut{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+}
